@@ -6,8 +6,7 @@
 development:
   adapter: postgresql
   host: localhost
-  username: user
-  database: app-dev
+  database: my_database_development
   pool: 5
   timeout: 5000
 
@@ -17,13 +16,12 @@ development:
 test:
   adapter: postgresql
   host: localhost
-  username: user
-  database: app-dev
+  database: my_database_test
   pool: 5
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: postgresql
+  database: my_database_production
   pool: 5
   timeout: 5000

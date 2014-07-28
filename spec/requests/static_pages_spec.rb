@@ -20,6 +20,8 @@ describe "Static pages" do
     end
   end
 
+  let(:base_title) { "Ruby on Rails Tutorial Sample App" }
+
   describe "Help page" do
 
   	it "should have the h1 'Help'" do
